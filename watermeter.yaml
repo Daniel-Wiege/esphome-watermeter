@@ -11,7 +11,7 @@ esphome:
   name: ${device_name}
   project:
     name: breaveheard.watermeter
-    version: "2.6"
+    version: "2.7"
 
 wifi:
   ap:
@@ -27,8 +27,14 @@ api:
 ota:
   platform: esphome
   
+improv_serial:
+
+web_server:
+  port: 80
+  
 dashboard_import:
   package_import_url: github://Breaveheard/esphome-watermeter/watermeter.yaml@main
+  import_full_config: true
 
 debug:
 
